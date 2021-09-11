@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 70%;
+    max-width: 600px;
+    margin: 15px auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+    background: rgb(237, 239, 248);
+    box-shadow: 2px 2px 2px rgb(179, 179, 179);
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+}
+
+.name {
+    font-size: 1.9vh;
+    margin: auto;
+    color: rgb(71, 71, 71);
+}
+
+.head {
+    display: flex;
+}
+
+.h2 {
+    margin: 5px;
+    padding: 5px;
+    color: rgb(77, 75, 75);
+    background: rgb(151, 217, 250);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(179, 179, 179);
+}
+
+img {
+    width: 150px;
+    margin: 5px 0px 0px 5px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+main {
+    display: flex;
+    background: rgb(230, 235, 253);
+    flex-direction: column;
+    box-shadow: 2px 2px 2px rgb(179, 179, 179);
+    border-left: 2px solid grey;
+    border-right: 2px solid grey;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.sect_1 {
+    margin: 10px;
+    padding: 10px;
+    color: rgb(77, 75, 75);
+    background: rgb(200, 235, 253);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgb(179, 179, 179);  
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(216, 223, 250);
+    box-shadow: 2px 2px 2px rgb(179, 179, 179);
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 2px 0px 2px;
+    color: rgb(77, 75, 75);
+    border: 2px solid grey;
+}
+
+#rs {
+    background: yellow;
+}
+
+#git {
+    width: 56px;
+}
+
+pre {
+    background: rgb(221, 220, 220);
+    width: 300px;
+}
+@media (max-width: 320px)
+{
+.head{
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    font-size: 2.5vh;
+}
+span {
+    font-size: 1.9vh;   
+}
+.sect_1{
+    overflow-wrap: break-word;
+}
+nav ul li{
+    overflow-wrap: break-word;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+}
+}

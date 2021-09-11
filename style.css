@@ -33,7 +33,6 @@ header {
     background: rgb(151, 217, 250);
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgb(179, 179, 179);
-    ;
 }
 
 img {
@@ -58,8 +57,7 @@ main {
     color: rgb(77, 75, 75);
     background: rgb(200, 235, 253);
     border-radius: 10px;
-    box-shadow: 2px 2px 2px rgb(179, 179, 179);
-    ;
+    box-shadow: 2px 2px 2px rgb(179, 179, 179);  
 }
 
 footer {

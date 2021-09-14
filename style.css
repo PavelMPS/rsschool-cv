@@ -15,9 +15,17 @@ header {
     border-left: 2px solid grey;
     border-right: 2px solid grey;
 }
+h1{
+    margin-left: -30px;
+}
 
+ figure {
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 0px;
+ }
 .name {
-    font-size: 1.9vh;
+    font-size: 18px;
     margin: auto;
     color: rgb(71, 71, 71);
 }
@@ -51,7 +59,7 @@ main {
     border-radius: 0px 0px 10px 10px;
 }
 
-.sect_1 {
+section {
     margin: 10px;
     padding: 10px;
     color: rgb(77, 75, 75);
@@ -78,10 +86,8 @@ footer {
 #git {
     width: 56px;
 }
-
-pre {
-    background: rgb(221, 220, 220);
-    width: 300px;
+pre code{
+    border-radius: 10px;
 }
 @media (max-width: 320px)
 {
@@ -90,11 +96,9 @@ pre {
     flex-direction: column;
 }
 .name {
-    font-size: 2.5vh;
+    font-size: 15px;
 }
-span {
-    font-size: 1.9vh;   
-}
+
 .sect_1{
     overflow-wrap: break-word;
 }

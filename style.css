@@ -1,8 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    width: 70%;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+.wrapper{
     max-width: 600px;
-    margin: 15px auto;
+    margin: auto;
 }
 
 header {
@@ -15,18 +19,30 @@ header {
     border-left: 2px solid grey;
     border-right: 2px solid grey;
 }
+h1{
+    margin-left: -30px;
+}
 
+h2{
+    border-bottom: 2px solid rgb(94, 93, 93);
+}
+
+figure {
+    margin-left: 0px;
+    margin-right: 30px;
+    margin-top: 0px;
+ }
 .name {
-    font-size: 1.9vh;
+    font-size: 18px;
     margin: auto;
     color: rgb(71, 71, 71);
 }
 
-.head {
+.header_part1 {
     display: flex;
 }
 
-.h2 {
+.header_part2 {
     margin: 5px;
     padding: 5px;
     color: rgb(77, 75, 75);
@@ -51,7 +67,7 @@ main {
     border-radius: 0px 0px 10px 10px;
 }
 
-.sect_1 {
+section {
     margin: 10px;
     padding: 10px;
     color: rgb(77, 75, 75);
@@ -59,7 +75,14 @@ main {
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgb(179, 179, 179);  
 }
-
+article {
+    margin-left: 10px;
+}
+#english_lvl{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
 footer {
     display: flex;
     justify-content: flex-end;
@@ -70,7 +93,9 @@ footer {
     color: rgb(77, 75, 75);
     border: 2px solid grey;
 }
-
+#footer_year{
+    margin-top: 35px;
+}
 #rs {
     background: yellow;
 }
@@ -78,10 +103,8 @@ footer {
 #git {
     width: 56px;
 }
-
-pre {
-    background: rgb(221, 220, 220);
-    width: 300px;
+pre code{
+    border-radius: 10px;
 }
 @media (max-width: 320px)
 {
@@ -89,20 +112,28 @@ pre {
     display: flex;
     flex-direction: column;
 }
+figure {
+    margin: auto;
+}
 .name {
-    font-size: 2.5vh;
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+    margin-left:30px;
 }
-span {
-    font-size: 1.9vh;   
+
+pre code{
+    padding-left: 0px;
+    font-size: 14px;
 }
-.sect_1{
+
+section, article, nav ul li{
     overflow-wrap: break-word;
 }
-nav ul li{
-    overflow-wrap: break-word;
-}
+ 
 footer{
     display: flex;
     flex-direction: column;
+    padding-left: 20px;
 }
+
 }

@@ -75,7 +75,14 @@ section {
     border-radius: 10px;
     box-shadow: 2px 2px 2px rgb(179, 179, 179);  
 }
-
+article {
+    margin-left: 10px;
+}
+#english_lvl{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
 footer {
     display: flex;
     justify-content: flex-end;
@@ -86,7 +93,9 @@ footer {
     color: rgb(77, 75, 75);
     border: 2px solid grey;
 }
-
+#footer_year{
+    margin-top: 35px;
+}
 #rs {
     background: yellow;
 }
@@ -108,12 +117,13 @@ figure {
 }
 .name {
     font-size: 12px;
-    color: rgb(42, 42, 43);
-    margin-right:5px;
+    color: rgb(71, 71, 71);
+    margin-left:30px;
 }
 
 pre code{
     padding-left: 0px;
+    font-size: 14px;
 }
 
 section, article, nav ul li{
@@ -125,4 +135,5 @@ footer{
     flex-direction: column;
     padding-left: 20px;
 }
+
 }

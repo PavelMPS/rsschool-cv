@@ -11,8 +11,8 @@
     <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
-    <header>
-        <div class="head">
+    <header class="wrapper">
+        <div class="header_part1">
   
           <figure>
             <img src="foto.png" alt="">
@@ -24,7 +24,7 @@
   
         </div>
   
-        <div class="h2">
+        <div class="header_part2">
           <h2>Contacts</h2>
           <nav>
             <ul>
@@ -34,7 +34,7 @@
           </nav>
         </div>
       </header>
-      <main>
+      <main class="wrapper">
         <section>
           <h2>About myself</h2>
             <p>I'm 34 years old. I have been
@@ -46,14 +46,31 @@
                developer.
             </p>
         </section>
-  
+
+        <section>
+          <h2>My skills</h2>
+          <h3>Hard skills:</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+          </ul>
+          <h3>Soft skills:</h3>
+          <ul>
+            <li>Good communication</li>
+            <li>Teamwork</li>
+            <li>Quick learning</li>
+          </ul>
+        </section>
+
         <section>
           <h2>Code example</h2>
             <pre>
             <code>
-  function func(s){
-           return s.indexOf('?') > 0 ? s : s += '?';
-  }
+function func(s){
+return s.indexOf('?') 
+>0?s:s+='?';
+}
             </code>
             </pre>
         </section>
@@ -73,14 +90,14 @@
         </section>
   
       </main>
-      <footer>
+      <footer class="wrapper">
         <a href="https://github.com/PavelMPS">
           <img id="git" src="git.png" alt="">
         </a>
         <a href="https://rs.school/js/" target="_blank">
           <img id="rs" src="rs_school_js.svg" alt="">
         </a>
-        <p>Copyright&copy;2021</p>
+        <p>2021</p>
       </footer>
 </body>
 </html>

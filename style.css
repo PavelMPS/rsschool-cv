@@ -53,7 +53,7 @@ figure {
     box-shadow: 2px 2px 2px rgb(179, 179, 179);
 }
 
-img {
+.my-photo {
     width: 150px;
     margin: 5px 0px 0px 5px;
     border: 2px solid grey;
@@ -95,9 +95,17 @@ article {
 
 .project-preview {
     width: 80%;
+    border-radius: 7px;
+    transition: 0.5s;
+}
+
+.project-preview:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .project-info {
+    width: 80%;
     color: black;
     text-decoration: none;
 }
@@ -121,12 +129,24 @@ footer {
     margin-top: 35px;
 }
 #rs {
+    width: 26%;
+    height: 22%;
+    border-radius: 5px;
     background: yellow;
+    transition: 0.5s;
 }
 
 #git {
     width: 56px;
+    transition: 0.5s;
 }
+
+#rs:hover,
+#git:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
 pre code{
     border-radius: 10px;
 }

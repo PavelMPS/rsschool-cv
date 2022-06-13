@@ -1,147 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My CV</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </head>
-  <body>
-    <header class="wrapper">
-      <div class="header_part1">
-        <figure>
-          <img class="my-photo" src="foto.png" alt="My_photo" />
-        </figure>
-
-        <div class="name">
-          <h1>Pavel Mazhaiski</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myCV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header-container">
+            <div class="photo"></div>
+            <div class="header-info-container">
+                <h1 class="name">PAVEL <span class="surname">MAZHAISKI</span></h1>
+                <h2 class="description">Front-end developer</h2>
+            </div>          
         </div>
-      </div>
-
-      <div class="header_part2">
-        <h2>Contacts</h2>
         <nav>
-          <ul>
-            <li>Phone: +375 (29) 829-14-15</li>
-            <li>E-mail: klintistwood1987@gmail.com</li>
-          </ul>
+            <ul class="navigation">
+                <li><a href="#contacts">CONTACTS</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#english">ENGLISH LEVEL</a></li>
+                <li><a href="#about-me">ABOUT ME</a></li>
+                <li><a href="#education">EDUCATION</a></li>    
+                <li><a href="#my-projects">MY PROJECTS</a></li>
+            </ul>
         </nav>
-      </div>
     </header>
-    <main class="wrapper">
-      <section>
-        <h2>About myself</h2>
-        <article>
-          <h4>Earlier</h4>
-          I'm 34 years old. I have been working as a doctor for 10 years. One
-          day I realized that it was not mine.
-        </article>
-        <article>
-          <h4>Now</h4>
-          I like Frontend. I hope to make my dream come true and become a
-          front-end developer.
-        </article>
-      </section>
+    <main class="main">
+        <div class="left-container">
+            <section class="contacts-container">
+                <h2 id="contacts" class="contacts-title">CONTACTS</h2>
+                <div class="phone-container">
+                    <div class="phone"></div>
+                    <p class="phone-number">+375(29)-829-14-15</p>
+                </div>
+                <div class="email-container">
+                    <div class="email"></div>
+                    <p class="my-email">klintistwood1987@gmail.com</p>
+                </div>
+                <div class="telegram-container">
+                    <div class="telegram"></div>
+                    <p class="my-telegram">Pavel MPS</p>
+                </div>              
+            </section>
 
-      <section>
-        <h2>My skills</h2>
-        <h3>Hard skills:</h3>
-        <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript</li>
-        </ul>
-        <h3>Soft skills:</h3>
-        <ul>
-          <li>Good communication</li>
-          <li>Teamwork</li>
-          <li>Quick learning</li>
-        </ul>
-      </section>
+            <section class="skills">
+                <h2 id="skills" class="skills-title">MY SKILLS</h2>
+                <div class="hard-skills">
+                    <h3 class="subtitle-skills">HARD-SKILLS</h3>
+                    <ol>
+                        <li>HTML 5</li>
+                        <li>CSS 3</li>
+                        <li>JavaScript</li>
+                        <li>Typescript</li>
+                        <li>React + Redux</li>
+                        <li>Git</li>
+                    </ol>
+                </div>
+                <div class="soft-skills">
+                    <h3 class="subtitle-skills">SOFT-SKILLS</h3>
+                    <ol>
+                        <li>Good communication</li>
+                        <li>Teamwork</li>
+                        <li>Quick learning</li>
+                        <li>Stress tolerance</li>
+                    </ol>
+                </div>
+            </section>
+            <section class="english">
+                <h2 id="english" class="english-title">ENGLISH LEVEL</h2>
+                <p class="english-level">Engish: A2</p>
+            </section>
 
-      <section>
-        <h2>Code example</h2>
-        <pre>
-            <code>
-function func(s){
-return s.indexOf('?') 
->0?s:s+='?';
-}
-            </code>
-            </pre>
-      </section>
-
-      <section>
-        <h2>Education</h2>
-        <ul>
-          <li>VSMU(Vitebsk state medical university)</li>
-          <li>
-            Belhard "Modern Front-End with JavaScript and HTML5"(online course)
-          </li>
-          <li>Self education(books,youtube,online manuals)</li>
-          <li>RSschool JavaScript/Front-end 2021Q3(sertificate)</li>
-          <li>RSschool React 2022 Q1 (now)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>English level</h2>
-        <p id="english_lvl">A2</p>
-      </section>
-
-      <section>
-        <h2>My projects</h2>
-        <div class="project-container">
-          <div class="project">
-            <a
-              class="project-info"
-              href="https://christmas-task-pavelmps.netlify.app"
-              target="_blank"
-            >
-              <img
-                class="project-preview"
-                src="./Cristmas-tree.JPG"
-                alt="Christmas tree project"
-              />
-              <p>JavaScript, HTML, css</p>
-            </a>
-          </div>
-          <div class="project">
-            <a
-              class="project-info"
-              href="https://rslang-pavelmps.netlify.app"
-              target="_blank"
-            >
-                <img
-                  class="project-preview"
-                  src="./Catlang.JPG"
-                  alt="Catlang project"
-                />
-
-              <p>JavaScript, HTML, css (Command work)</p>
-            </a>
-          </div>
-          <div></div>
+            <section class="my-sertificates">
+                <h2 class="sertificate-title">SERTIFICATES</h2>
+                <div class="sertificate-container">
+                    <a href="https://app.rs.school/certificate/kdc2vf93" target="_blank">
+                        <div class="sertificate-js"></div>
+                    </a>
+                    <a href="https://app.rs.school/certificate/06gtrv0y" target="_blank">
+                        <div class="sertificate-react"></div>
+                    </a>
+                    <a href="#">
+                        <div class="sertificate-belhard"></div>
+                    </a>
+                </div>
+                
+            </section>
         </div>
-      </section>
+        <div class="right-container">
+
+            <section class="about-me-container">
+                <h2 id="about-me" class="about-me-title">ABOUT ME</h2>
+                <p class="about-me-description">Hello, my name is Pavel. I am 35 years old. 
+                    I started learning programming since August 2021.
+                    At the moment I am looking for a job.</p>
+                <div>
+
+                </div>
+            </section>
+
+            <section class="education-container">
+                <h2 id="education" class="education-title">EDUCATION</h2>    
+                <div>
+                    <div class="education-info">
+                        <div class="education-year">2005-2011</div><div>VSMU(Vitebsk state medical university)</div>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-year">2021-2021</div><div>Belhard "Modern Front-End with JavaScript and HTML5"</div>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-year">2021-2022</div><div>RSschool JavaScript/Front-end 2021Q3(sertificate)</div>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-year">2022-2022</div><div>RSschool React 2022 Q1 (sertificate)</div>
+                    </div>
+                    <div class="education-info">
+                        <div class="education-year">2022-2022</div><div>RSschool NodeJS 2022 Q2 (now)</div>
+                    </div>                 
+                </div>
+            </section>
+
+            <section class="my-projects-container">
+                <h2 id="my-projects" class="my-projects-title">MY PROJECTS</h2>
+                <div class="projects">
+                    <a href="https://pavelmps-momentum.netlify.app/" target="_blank">
+                        <div class="my-project-wiev momentum"></div>                       
+                    </a>
+                    <a href="https://pavelmps-museum.netlify.app/" target="_blank">
+                        <div class="my-project-wiev museum"></div>
+                    </a>
+                    <a href="https://christmas-task-pavelmps.netlify.app/" target="_blank">
+                        <div class="my-project-wiev christmas-tree"></div>
+                    </a>
+                    <a href="https://rslang-pavelmps.netlify.app/" target="_blank">
+                        <div class="my-project-wiev rslang"></div>
+                    </a>
+                    <a href="https://helpful-custard-f4251a.netlify.app/" target="_blank">
+                        <div class="my-project-wiev rsello"></div>
+                    </a>
+                    <a href="https://pavelmps.github.io/cssMemSlider/cssMemSlider/index.html" target="_blank">
+                        <div class="my-project-wiev css-slider"></div>
+                    </a>
+                </div>              
+            </section>
+
+        </div>
     </main>
-    <footer class="wrapper">
-      <a href="https://github.com/PavelMPS">
-        <img id="git" src="git.png" alt="" />
-      </a>
-      <a id="rs" href="https://rs.school/js/" target="_blank">
-        <img src="rs_school_js.svg" alt="" />
-      </a>
-      <p id="footer_year">2021</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="github">
+                <a class="my-github" href="https://github.com/PavelMPS/" target="_blank">Pavel Mazhaiski</a>
+            </div>
+            <div class="rs">RSschool</div>
+            <div class="year">2022</div>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
